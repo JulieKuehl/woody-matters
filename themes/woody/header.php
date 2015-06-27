@@ -22,7 +22,7 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'woody' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header boxed" role="banner">
 		<div class="site-branding">
 			<img src="/images/logo.png" alt="Woody Matters logo" />
 <!--			<h1 class="site-title"><a href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" rel="home">--><?php //bloginfo( 'name' ); ?><!--</a></h1>-->
@@ -35,13 +35,14 @@
 			</div><!-- .social-links -->
 			<button class="share-your-story" aria-controls="">Share Your Story</button>
 		</div><!-- .header-secondary-info -->
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'woody' ); ?></button>
-			<div class="boxed">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-			</div><!-- .boxed -->
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+
+	<nav id="site-navigation" class="main-navigation" role="navigation">
+		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'woody' ); ?></button>
+		<div class="boxed">
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+		</div><!-- .boxed -->
+	</nav><!-- #site-navigation -->
+
 
 	<div id="content" class="site-content">
