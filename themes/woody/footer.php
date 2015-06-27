@@ -12,6 +12,21 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="footer-columns">
+			<div class="footer-column">
+				<?php dynamic_sidebar( 'footer-1' ); ?>
+			</div><!-- .footer-column -->
+			<div class="footer-column">
+				<?php dynamic_sidebar( 'footer-2' ); ?>
+			</div><!-- .footer-column -->
+			<div class="footer-column">
+				<?php dynamic_sidebar( 'footer-3' ); ?>
+			</div><!-- .footer-column -->
+			<div class="footer-column">
+				<?php dynamic_sidebar( 'footer-4' ); ?>
+			</div><!-- .footer-column -->
+		</div><!-- .footer-columns -->
+		<div class="clearfix"></div>
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'woody' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'woody' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
