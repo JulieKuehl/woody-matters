@@ -29,6 +29,10 @@
 <!--			<p class="site-description">--><?php //bloginfo( 'description' ); ?><!--</p>-->
 		</div><!-- .site-branding -->
 
+		<div class="social-links">
+			<?php dynamic_sidebar( 'social-links' ); ?>
+		</div><!-- .social-links -->
+
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'woody' ); ?></button>
 			<div class="boxed">
