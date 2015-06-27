@@ -29,9 +29,12 @@
 <!--			<p class="site-description">--><?php //bloginfo( 'description' ); ?><!--</p>-->
 		</div><!-- .site-branding -->
 
-		<div class="social-links">
-			<?php dynamic_sidebar( 'social-links' ); ?>
-		</div><!-- .social-links -->
+		<div class="header-secondary-info">
+			<div class="social-links">
+				<?php dynamic_sidebar( 'social-links' ); ?>
+			</div><!-- .social-links -->
+			<button class="share-your-story" aria-controls="">Share Your Story</button>
+		</div><!-- .header-secondary-info -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'woody' ); ?></button>
